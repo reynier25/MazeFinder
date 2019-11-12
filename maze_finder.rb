@@ -205,4 +205,6 @@ if __FILE__ == $PROGRAM_NAME
   puts test_maze
   puts "Start is at #{test_maze.start_ind}"
   puts "End is at #{test_maze.end_ind}"
+  test_solver = MazeClasses::Maze_Solver.new(test_maze)
+  test_solver.solve
 end
